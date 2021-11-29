@@ -1,0 +1,6 @@
+#DevilHacker
+telethon
+cryptg
+asyncio
+telegraph
+requests
