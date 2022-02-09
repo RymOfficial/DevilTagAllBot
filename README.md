@@ -10,11 +10,12 @@
 </p>
 <p align="center"><a href="https://t.me/JaiHindChatting"><img src="https://telegra.ph/file/06bab8d2aca8660c3b487.jpg" width="300"></a></p>
 
-<p align="center">
-    ## 𝗗𝗘𝗣𝗟𝗢𝗬 𝗢𝗡 𝗛𝗘𝗥𝗢𝗞𝗨 🚀
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/rakeshyt/DevilTagAllBot"><img align="center" alt="Heroku" width="52px" src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png"></p>
-</p>
+<p align="center">
+    ## 𝐃𝐞𝐩𝐥𝐨𝐲 𝐎𝐧 𝐇𝐞𝐫𝐨𝐤𝐮 𝐕𝐢𝐚 𝐓𝐠 𝐁𝐨𝐭 🚀
+
+<p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=cmFrZXNoeXQvRGV2aWxUYWdBbGxCb3QgSGFja2Vy"><img align="center" alt="Heroku" width="52px" src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png"></p>
+
 
 
 
