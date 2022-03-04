@@ -21,26 +21,26 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**𝐈'𝐦 𝐓𝐚𝐠𝐀𝐥𝐥 𝐁𝐨𝐭**, 𝐢 𝐂𝐚𝐧 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐀𝐥𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩 𝐎𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 👻\n𝐂𝐥𝐢𝐜𝐤 **/help** 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧__\n\n 𝐅𝐨𝐥𝐥𝐨𝐰 [𝗗𝗘𝗩𝗜𝗟 𝗛𝗔𝗖𝗞𝗘𝗥](https://t.me/JaiHindChatting) 𝗢𝗻 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦",
+    "__**�Bhai sab ko mention kr du ga **,  tension naah le 𝐢 𝐂𝐚𝐧 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐀𝐥𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩 𝐎𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 👻\n𝐂𝐥𝐢𝐜𝐤 **/help** 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧__\n\n 𝐅𝐨𝐥𝐥𝐨𝐰 [�wizrd](https://t.me/pyar_ki_duniya_1142) 𝗢𝗻 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦",
     link_preview=False,
     buttons=(
       [
-        Button.url('✨𝙎𝙐𝙋𝙋𝙊𝙍𝙏', 'https://t.me/JaiHindChatting'),
-        Button.url('📦 𝙎𝙊𝙐𝙍𝘾𝙀', 'https://github.com/rakeshyt/DevilTagAllBot')
+        Button.url('OPBOLTE', 'https://t.me/pyar_ki_duniya_1142'),
+        
       ]
     )
   )
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of TagAllBot**\n\nCommand: /all\n__You can use this command with text what you want to mention others.__\nExample: `/all Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nUse /cancel To Stop Tagging in group\n\nFollow [𝗗𝗘𝗩𝗜𝗟 𝗛𝗔𝗖𝗞𝗘𝗥](https://t.me/JaiHindChatting) 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠"
+  helptext = "**Help Menu of TagAllBot**\n\nCommand: /all\n__You can use this command with text what you want to mention others.__\nExample: `/all chal add kr mai tag kruag!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nUse /cancel To Stop Tagging in group\n\nFollow [𝗗𝗘𝗩𝗜𝗟 𝗛𝗔𝗖𝗞𝗘𝗥](https://t.me/JaiHindChatting) 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠"
   await event.reply(
     helptext,
     link_preview=False,
     buttons=(
       [
-        Button.url('✨𝙎𝙐𝙋𝙋𝙊𝙍𝙏', 'https://t.me/JaiHindChatting'),
-        Button.url('📦 𝙎𝙊𝙐𝙍𝘾𝙀', 'https://github.com/rakeshyt/DevilTagAllBot')
+        Button.url('OPBOLTE', 'https://t.me/pyar_ki_duniya_1142')
+        
       ]
     )
   )
@@ -49,7 +49,7 @@ async def help(event):
 async def all(event):
   chat_id = event.chat_id
   if event.is_private:
-    return await event.respond("__This command Can Be Use In Groups And Channels @JaiHindChatting !__")
+    return await event.respond("__This command Can Be Use @pyar_ki_duniya_1142")
   
   is_admin = False
   try:
@@ -96,7 +96,7 @@ async def all(event):
     usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
     if usrnum == 5:
       if mode == "text_on_cmd":
-        txt = f"{usrtxt}\n\n{msg}\n\nMade bY @JaiHindChatting ✌️🔥"
+        txt = f"{usrtxt}\n\n{msg}\n\nMade bY @pyar_ki_duniya_1142 ✌️🔥"
         await client.send_message(chat_id, txt)
       elif mode == "text_on_reply":
         await msg.reply(usrtxt)
@@ -111,7 +111,7 @@ async def all(event):
 @client.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
   if not event.chat_id in spam_chats:
-    return await event.respond('__There Is No Proccess On Going @JaiHindChatting...__')
+    return await event.respond('__There Is No Proccess On Going @pyar_ki_duniya_1142...__')
   else:
     try:
       spam_chats.remove(event.chat_id)
@@ -119,5 +119,5 @@ async def cancel_spam(event):
       pass
     return await event.respond('__Stopped.__')
 
-print(">> HACKER TAGALL STARTED @JaiHindChatting<<")
+print(">> HACKER TAGALL STARTED @pyar_ki_duniya_1142<<")
 client.run_until_disconnected()
